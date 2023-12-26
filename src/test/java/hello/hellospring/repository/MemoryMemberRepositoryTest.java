@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 class MemoryMemberRepositoryTest {
-    MemoryMemberRepository repository = new MemoryMemberRepository();
+    MemoryMemberRepository  repository = new MemoryMemberRepository();
 
     @AfterEach
     public void afterEach(){

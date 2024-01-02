@@ -22,12 +22,12 @@ public class MemberController {
     public String createForm(){
         return "members/createMemberForm";
     }
-    @PostMapping("/members/new")
+    @PostMapping(value = "/members/new")
     public String create(MemberForm form){
         Member member = new Member();
         member.setName(form.getName());
-        System.out.println("member = "+member.getName());
         memberService.join(member);
+        System.out.println("#####");
         return "redirect:/";
     }
     @GetMapping("/members")
